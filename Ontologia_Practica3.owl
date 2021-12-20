@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alex/ontologies/2021/11/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alex/ontologies/2021/11/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/alex/ontologies/2021/11/untitled-ontology-2"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://schema.org/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catalogo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sitio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compra"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#creador"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mantiene"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#posee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seEncuentraEn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IDComprador"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#creadorSitio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descSitio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#marca"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#modelo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numeroPaginas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numeroProductos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#productID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipoProducto"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lenovo_IdeaPad_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TecnoShop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#account1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#account2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catalogo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iPad_Air"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iPhone11"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="#Persona"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Persona"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Persona"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Persona"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <NamedIndividual IRI="#Alex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producto"/>
+        <NamedIndividual IRI="#Lenovo_IdeaPad_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <NamedIndividual IRI="#Paco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sitio"/>
+        <NamedIndividual IRI="#TecnoShop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producto"/>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <NamedIndividual IRI="#account1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <NamedIndividual IRI="#account2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Catalogo"/>
+        <NamedIndividual IRI="#catalogo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producto"/>
+        <NamedIndividual IRI="#iPad_Air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producto"/>
+        <NamedIndividual IRI="#iPhone11"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#creador"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#TecnoShop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#posee"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#account1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seEncuentraEn"/>
+        <NamedIndividual IRI="#Lenovo_IdeaPad_3"/>
+        <NamedIndividual IRI="#catalogo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#compra"/>
+        <NamedIndividual IRI="#Paco"/>
+        <NamedIndividual IRI="#iPhone11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#posee"/>
+        <NamedIndividual IRI="#Paco"/>
+        <NamedIndividual IRI="#account2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mantiene"/>
+        <NamedIndividual IRI="#TecnoShop"/>
+        <NamedIndividual IRI="#catalogo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seEncuentraEn"/>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_10"/>
+        <NamedIndividual IRI="#catalogo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seEncuentraEn"/>
+        <NamedIndividual IRI="#iPad_Air"/>
+        <NamedIndividual IRI="#catalogo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seEncuentraEn"/>
+        <NamedIndividual IRI="#iPhone11"/>
+        <NamedIndividual IRI="#catalogo"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#IDComprador"/>
+        <NamedIndividual IRI="#Alex"/>
+        <Literal>C0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creadorSitio"/>
+        <NamedIndividual IRI="#Alex"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Alex"/>
+        <Literal>Alejandro Bernardo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marca"/>
+        <NamedIndividual IRI="#Lenovo_IdeaPad_3"/>
+        <Literal>Lenovo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#modelo"/>
+        <NamedIndividual IRI="#Lenovo_IdeaPad_3"/>
+        <Literal>IdeaPad 3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#precio"/>
+        <NamedIndividual IRI="#Lenovo_IdeaPad_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">439.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#productID"/>
+        <NamedIndividual IRI="#Lenovo_IdeaPad_3"/>
+        <Literal>LP3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoProducto"/>
+        <NamedIndividual IRI="#Lenovo_IdeaPad_3"/>
+        <Literal>Portatil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#IDComprador"/>
+        <NamedIndividual IRI="#Paco"/>
+        <Literal>C1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#creadorSitio"/>
+        <NamedIndividual IRI="#Paco"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Paco"/>
+        <Literal>Paco Rodriguez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descSitio"/>
+        <NamedIndividual IRI="#TecnoShop"/>
+        <Literal>Web donde comprar articulos tecnologicos
+...</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numeroPaginas"/>
+        <NamedIndividual IRI="#TecnoShop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marca"/>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_10"/>
+        <Literal>Xiaomi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#modelo"/>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_10"/>
+        <Literal>Redmi Note 10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#precio"/>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">400.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#productID"/>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_10"/>
+        <Literal>XRN10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoProducto"/>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_10"/>
+        <Literal>Telefono</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+        <NamedIndividual IRI="#account1"/>
+        <Literal>AlexBR784</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+        <NamedIndividual IRI="#account2"/>
+        <Literal>Paco1234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numeroProductos"/>
+        <NamedIndividual IRI="#catalogo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marca"/>
+        <NamedIndividual IRI="#iPad_Air"/>
+        <Literal>Apple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#modelo"/>
+        <NamedIndividual IRI="#iPad_Air"/>
+        <Literal>iPad Air</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#precio"/>
+        <NamedIndividual IRI="#iPad_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">649.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#productID"/>
+        <NamedIndividual IRI="#iPad_Air"/>
+        <Literal>iPA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoProducto"/>
+        <NamedIndividual IRI="#iPad_Air"/>
+        <Literal>Tablet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marca"/>
+        <NamedIndividual IRI="#iPhone11"/>
+        <Literal>Apple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#modelo"/>
+        <NamedIndividual IRI="#iPhone11"/>
+        <Literal>iPhone 11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#precio"/>
+        <NamedIndividual IRI="#iPhone11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">700.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#productID"/>
+        <NamedIndividual IRI="#iPhone11"/>
+        <Literal>I11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoProducto"/>
+        <NamedIndividual IRI="#iPhone11"/>
+        <Literal>Telefono</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compra"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#creador"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mantiene"/>
+        <Class IRI="#Sitio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#posee"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seEncuentraEn"/>
+        <Class IRI="#Producto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compra"/>
+        <Class IRI="#Producto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#creador"/>
+        <Class IRI="#Sitio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mantiene"/>
+        <Class IRI="#Catalogo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#posee"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#seEncuentraEn"/>
+        <Class IRI="#Catalogo"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IDComprador"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#creadorSitio"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descSitio"/>
+        <Class IRI="#Sitio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#marca"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#modelo"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numeroPaginas"/>
+        <Class IRI="#Sitio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numeroProductos"/>
+        <Class IRI="#Catalogo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#precio"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#productID"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoProducto"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#IDComprador"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#creadorSitio"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descSitio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#marca"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#modelo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numeroPaginas"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numeroProductos"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precio"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#productID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipoProducto"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#compra</IRI>
+        <Literal>Equivalente a una cesta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#compra</IRI>
+        <Literal>Persona compra Producto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#creadorSitio</IRI>
+        <Literal>Persona creadorSitio True</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#numeroPaginas</IRI>
+        <Literal>Sitio numeroPaginas 4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#posee</IRI>
+        <Literal>Person posee OnlineAccount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#precio</IRI>
+        <Literal>Producto precio 600.99</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tipoProducto</IRI>
+        <Literal>Producto tipoProducto &quot;Ordenador/Telefono&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineAccount</IRI>
+        <Literal>An online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineAccount</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineAccount</IRI>
+        <Literal>Online Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineAccount</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>A person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal>Indicates the name (identifier) associated with this online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal>account name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>A name for some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
